@@ -26,6 +26,7 @@ Then run the project by typing
 }
 `
 - To make a transaction, use post method and pass data as json format to the endpoint <http://127.0.0.1:8000/transaction/transaction-history-list/>
+
 `
 {
     "user": {
