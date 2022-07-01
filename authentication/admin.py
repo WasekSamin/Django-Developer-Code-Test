@@ -6,5 +6,6 @@ from .models import User
 @admin.register(User)
 class UserAdmin(admin.ModelAdmin):
     lsit_display = (
-        "uid", "username", "mobile_number"
+        "uid", "username", 
+        "mobile_number", "created_at"
     )

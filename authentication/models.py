@@ -13,7 +13,7 @@ class User(models.Model):
         ordering = ("-created_at", )
 
     def __str__(self):
-        return str(self.mobile_number)
+        return self.mobile_number
 
     # Check if user already exists
     def check_for_user_exists(self, mobile_number):
