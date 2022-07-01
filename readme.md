@@ -18,15 +18,14 @@ Then run the project by typing
 
 ### Note
 #### Using postman
-- To create a new user, use post method and pass data as json format to the endpoint <http://127.0.0.1:8000/authentication/user-list/>
+- To create a new user, use post method and pass data as json format to the endpoint <http://127.0.0.1:8000/authentication/user-list/> <br />
 `
 {
     "username": "Test User 100",
     "mobile_number": "00001"
 }
 `
-- To make a transaction, use post method and pass data as json format to the endpoint <http://127.0.0.1:8000/transaction/transaction-history-list/>
-
+- To make a transaction, use post method and pass data as json format to the endpoint <http://127.0.0.1:8000/transaction/transaction-history-list/> <br />
 `
 {
     "user": {
