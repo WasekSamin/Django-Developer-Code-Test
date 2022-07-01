@@ -21,13 +21,15 @@ class TestTransactionHistoryModel(TestCase):
         money_amount = trans_hist_obj.money_amount
         self.assertIsNotNone(trans_hist_obj)
 
-        for i in range(9):
+        for i in range(1, 9):
             transfer_scheduled_time = "2022-06-30T23:46:34"
             sent_amount = round(uniform(10, 500))
 
             self.assertGreaterEqual(trans_hist_obj.money_amount, sent_amount)
 
             receiver_obj = User.get_user_obj(self, i+100000)
+
+            self.assertIsNotNone(receiver_obj)
 
             trans_obj = Transaction(
                 receiver=receiver_obj,
